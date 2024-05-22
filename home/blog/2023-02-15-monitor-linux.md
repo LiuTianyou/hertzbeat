@@ -18,7 +18,7 @@ keywords: [Open source monitoring tool, operating system monitoring, Linux monit
 - It configurable protocol specifications such as Http, Jmx, Ssh, Snmp, Jdbc, Prometheus, etc. You only need to configure YML to use these protocols to customize and collect any metrics you want to collect. Do you believe that you can immediately adapt to a new monitoring type such as K8s or Docker just by configuring YML?
 - HertzBeat's powerful customization, multi-type support, easy expansion, and low coupling, hope to help developers and small and medium teams quickly build their own monitoring tools.
 
-Github: https://github.com/apache/hertzbeat
+Github: [https://github.com/apache/hertzbeat](https://github.com/apache/hertzbeat)
 
 ### Get Linux Monitoring Done in HertzBeat in 5 Minutes
 
