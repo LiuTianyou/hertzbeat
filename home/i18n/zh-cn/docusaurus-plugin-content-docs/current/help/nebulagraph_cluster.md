@@ -88,4 +88,4 @@ keywords: [ 开源监控系统, 开源数据库监控, 开源图数据库监控,
 | status  | 无    | 状态 （ONLINE/OFFLINE） |
 | version | 无    | 版本                  |
 
-> 如果需要自定义监控模板采集NebulaGraph集群的数据，请参考： [NGQL自定义监控](../advanced/extend-ngql.md)
+> 如果需要自定义监控模板采集NebulaGraph集群的数据，请参考： [NGQL自定义监控](../advanced/extend-ngql)

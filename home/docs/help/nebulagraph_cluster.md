@@ -88,4 +88,4 @@ keywords: [ Open Source Monitoring System, Open Source Database Monitoring, Open
 | status      | None        | Status (ONLINE/OFFLINE) |
 | version     | None        | Version                 |
 
-> If you need to customize monitoring templates to collect data from NebulaGraph clusters, please refer to: [NGQL Custom Monitoring](../advanced/extend-ngql.md)
+> If you need to customize monitoring templates to collect data from NebulaGraph clusters, please refer to: [NGQL Custom Monitoring](../advanced/extend-ngql-112)
