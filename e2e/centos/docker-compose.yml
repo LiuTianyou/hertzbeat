@@ -59,8 +59,6 @@ services:
   centos:
     image: hertzbeat-centos-test
     container_name: e2e-centos
-    ports:
-      - "22:22"
     healthcheck:
       test: [ "CMD-SHELL","ls"]
       interval: 3s
