@@ -1,0 +1,54 @@
+{
+    "detected": true,
+    "collector": "",
+    "monitor": {
+        "intervals": 30,
+        "tags": [],
+        "app": "centos",
+        "host": "centos",
+        "name": "CENTOS_centos"
+    },
+    "params": [
+        {
+            "display": true,
+            "field": "host",
+            "type": 1,
+            "paramValue": "centos"
+        },
+        {
+            "display": true,
+            "field": "port",
+            "type": 0,
+            "paramValue": 22
+        },
+        {
+            "display": true,
+            "field": "timeout",
+            "type": 0,
+            "paramValue": 6000
+        },
+        {
+            "display": true,
+            "field": "reuseConnection",
+            "type": 1,
+            "paramValue": false
+        },
+        {
+            "display": true,
+            "field": "username",
+            "type": 1,
+            "paramValue": "root"
+        },
+        {
+            "display": true,
+            "field": "password",
+            "type": 1,
+            "paramValue": "123456"
+        },
+        {
+            "display": true,
+            "field": "privateKey",
+            "type": 1
+        }
+    ]
+}
