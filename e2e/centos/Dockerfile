@@ -12,6 +12,4 @@ RUN ssh-keygen -A
 
 RUN mkdir /var/run/sshd
 
-EXPOSE 22
 
-CMD ["/usr/sbin/sshd", "-D"]
