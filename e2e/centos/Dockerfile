@@ -1,4 +1,4 @@
-FROM centos:centos7
+FROM quay.io/centos/centos:centos7
 
 RUN sed -i 's|^mirrorlist=|#mirrorlist=|g' /etc/yum.repos.d/CentOS-* && \
     sed -i 's|^#baseurl=http://mirror.centos.org|baseurl=http://mirrors.aliyun.com|g' /etc/yum.repos.d/CentOS-* && \
