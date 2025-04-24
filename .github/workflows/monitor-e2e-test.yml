@@ -44,6 +44,16 @@ jobs:
           file: ./script/docker/server/Dockerfile
           push: false
           tags: apache/hertzbeat:test
+
+      - name: Run Centos Linux Monitor E2E Test
+        run: |
+          sudo curl -L https://github.com/docker/compose/releases/download/v2.23.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+          sudo chmod u+x /usr/local/bin/docker-compose
+          cd e2e/centos
+          docker build -t hertzbeat-centos-test .
+          sudo docker-compose version
+          sudo docker-compose up --exit-code-from testing --remove-orphans
+
       - name: Run K8s Monitor E2E Test
         run: |
           sudo curl -L https://github.com/docker/compose/releases/download/v2.23.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
@@ -52,10 +62,4 @@ jobs:
           sudo docker-compose version
           sudo docker-compose up --exit-code-from testing --remove-orphans
 
-      - name: Run Centos Linux Monitor E2E Test
-        run: |
-          sudo curl -L https://github.com/docker/compose/releases/download/v2.23.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
-          sudo chmod u+x /usr/local/bin/docker-compose
-          cd e2e/centos
-          sudo docker-compose version
-          sudo docker-compose up --exit-code-from testing --remove-orphans
+
