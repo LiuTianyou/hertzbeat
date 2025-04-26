@@ -58,7 +58,6 @@ jobs:
           ALL_CHANGED_FILES: ${{ steps.changed-markdown-files.outputs.all_changed_files }}
         run: |
           sudo npm install -g markdown-link-check@3.8.7
-          for file in $(find ./home -name "*.md"); do
           for file in ${ALL_CHANGED_FILES}; do
             if ! grep -Fxq "$file" ./script/ci/exclude_files.txt; then
               markdown-link-check -c ./script/ci/link_check.json -q "$file"
